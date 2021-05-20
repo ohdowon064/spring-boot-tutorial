@@ -17,6 +17,8 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	// bean validation
+	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
@@ -24,9 +26,6 @@ dependencies {
 
 	// jsoup HTML parser library @ https://jsoup.org/
 	implementation("org.jsoup:jsoup:1.13.1")
-
-	// bean validation
-	implementation("org.springframework.boot:spring-boot-starter-validation")
 }
 
 tasks.withType<KotlinCompile> {
