@@ -24,9 +24,10 @@ import javax.validation.constraints.Size
 class ExceptionApiController {
 
     @GetMapping("/hello")
-    fun hello() {
+    fun hello(): String {
         val list = mutableListOf<String>()
-        val tmp = list[0]
+         // val tmp = list[0]
+        return "hello"
     }
 
     @GetMapping("")
